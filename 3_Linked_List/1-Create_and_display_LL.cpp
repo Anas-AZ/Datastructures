@@ -9,10 +9,10 @@ struct Node{
 void create(int *A, int n)
 {
     Node *t, *last;
-    first=new Node;
-    first->data = A[0];
-    first->next=NULL;
-    last=first;
+    t=new Node;
+    t->data = A[0];
+    t->next=NULL;
+    last=first=t;
 
     for(int i=1;i<n;i++)
     {
